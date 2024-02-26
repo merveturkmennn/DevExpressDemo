@@ -63,11 +63,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IDEASOFTDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IDEASOFTDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Member.cs" />
     <Compile Include="MembersDal.cs" />
     <Compile Include="ProcessLog.cs" />
@@ -97,17 +92,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="IDEASOFTDataSet.xsc">
-      <DependentUpon>IDEASOFTDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="IDEASOFTDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>IDEASOFTDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="IDEASOFTDataSet.xss">
-      <DependentUpon>IDEASOFTDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

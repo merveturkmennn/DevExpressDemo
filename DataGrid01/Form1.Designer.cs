@@ -42,21 +42,17 @@
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
             this.processLogsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.ıdeasoftDataSet1 = new DataGrid01.IDEASOFTDataSet();
             this.btnFiltrele = new DevExpress.XtraEditors.SimpleButton();
             this.dateEditBitis = new DevExpress.XtraEditors.DateEdit();
             this.dateEditBaslangic = new DevExpress.XtraEditors.DateEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.processLogsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.iDEASOFTDataSet = new DataGrid01.IDEASOFTDataSet();
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
-            this.processLogsTableAdapter = new DataGrid01.IDEASOFTDataSetTableAdapters.ProcessLogsTableAdapter();
-            this.processLogsTableAdapter1 = new DataGrid01.IDEASOFTDataSetTableAdapters.ProcessLogsTableAdapter();
-            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.virtualServerModeSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
@@ -66,21 +62,19 @@
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.processLogsBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ıdeasoftDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditBitis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditBitis.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditBaslangic.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditBaslangic.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.processLogsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iDEASOFTDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // sqlDataSource1
@@ -153,6 +147,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEdit1.Properties.DataSource = this.processLogsBindingSource1;
             this.lookUpEdit1.Properties.DisplayMember = "Username";
+            this.lookUpEdit1.Properties.EditValueType = DevExpress.XtraEditors.Repository.LookUpEditValueType.ValueList;
             this.lookUpEdit1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.lookUpEdit1.Size = new System.Drawing.Size(313, 20);
             this.lookUpEdit1.StyleController = this.layoutControl1;
@@ -161,14 +156,8 @@
             // processLogsBindingSource1
             // 
             this.processLogsBindingSource1.DataMember = "ProcessLogs";
-            this.processLogsBindingSource1.DataSource = this.ıdeasoftDataSet1;
             this.processLogsBindingSource1.Filter = "group by Username";
             this.processLogsBindingSource1.Sort = "";
-            // 
-            // ıdeasoftDataSet1
-            // 
-            this.ıdeasoftDataSet1.DataSetName = "IDEASOFTDataSet";
-            this.ıdeasoftDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnFiltrele
             // 
@@ -220,6 +209,14 @@
             this.Root.Size = new System.Drawing.Size(1037, 94);
             this.Root.TextVisible = false;
             // 
+            // emptySpaceItem1
+            // 
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.Location = new System.Drawing.Point(253, 0);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(382, 74);
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.dateEditBaslangic;
@@ -259,12 +256,6 @@
             // processLogsBindingSource
             // 
             this.processLogsBindingSource.DataMember = "ProcessLogs";
-            this.processLogsBindingSource.DataSource = this.iDEASOFTDataSet;
-            // 
-            // iDEASOFTDataSet
-            // 
-            this.iDEASOFTDataSet.DataSetName = "IDEASOFTDataSet";
-            this.iDEASOFTDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tablePanel1
             // 
@@ -281,22 +272,6 @@
             this.tablePanel1.Size = new System.Drawing.Size(1063, 472);
             this.tablePanel1.TabIndex = 2;
             this.tablePanel1.UseSkinIndents = true;
-            // 
-            // processLogsTableAdapter
-            // 
-            this.processLogsTableAdapter.ClearBeforeFill = true;
-            // 
-            // processLogsTableAdapter1
-            // 
-            this.processLogsTableAdapter1.ClearBeforeFill = true;
-            // 
-            // emptySpaceItem1
-            // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(253, 0);
-            this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(382, 74);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // Form1
             // 
@@ -317,21 +292,19 @@
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.processLogsBindingSource1)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.ıdeasoftDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditBitis.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditBitis.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditBaslangic.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditBaslangic.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.processLogsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iDEASOFTDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
             this.tablePanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -356,12 +329,8 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
-        private IDEASOFTDataSet iDEASOFTDataSet;
         private System.Windows.Forms.BindingSource processLogsBindingSource;
-        private IDEASOFTDataSetTableAdapters.ProcessLogsTableAdapter processLogsTableAdapter;
         private System.Windows.Forms.BindingSource processLogsBindingSource1;
-        private IDEASOFTDataSet ıdeasoftDataSet1;
-        private IDEASOFTDataSetTableAdapters.ProcessLogsTableAdapter processLogsTableAdapter1;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
     }
 }
