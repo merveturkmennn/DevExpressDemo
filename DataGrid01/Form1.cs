@@ -14,8 +14,10 @@ using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Views.Grid;
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Reflection.Emit;
 using System.Threading;
 using System.Windows.Forms;
@@ -188,7 +190,7 @@ namespace DataGrid01
                 string columnName = "Act";
                 string value = view.GetRowCellValue(e.RowHandle, columnName).ToString();
 
-                // Renklendirme koşulunu burada belirleyin
+              
 
                 if (value == "delete")
                 {
@@ -239,36 +241,59 @@ namespace DataGrid01
             };
         }
 
-        private void btnFiltrele_Click(object sender, EventArgs e)
+     
+
+        private void btnFiltrele2_Click(object sender, EventArgs e)
         {
             DateTime baslangicTarihi = dateEditBaslangic.DateTime;
             DateTime bitisTarihi = dateEditBitis.DateTime;
-            string filtre = string.Format("[CreatedAt] >= #{0:M/d/yyyy}# And [CreatedAt] <= #{1:M/d/yyyy}#", baslangicTarihi, bitisTarihi);
+            string tarihFiltresi = string.Format("[CreatedAt] >= #{0:yyyy-MM-dd}# And [CreatedAt] <= #{1:yyyy-MM-dd}#", baslangicTarihi,bitisTarihi);
 
-            gridView.ActiveFilterString = filtre;
+           
+
+           
+            var selectedValues = (IEnumerable)lookUpEdit1.EditValue;
+
+            string kullaniciFiltresi = "";
+
+            // Seçilen her değer için filtre ifadesini oluştur
+            foreach (var selectedValue in selectedValues)
+            {
+                if (!string.IsNullOrEmpty(kullaniciFiltresi))
+                {
+                    kullaniciFiltresi += " OR ";
+                }
+                kullaniciFiltresi += string.Format("[UserName] = '{0}'", selectedValue);
+            }
+          
+           
+            string birlesikFiltre = "";
+            if (!string.IsNullOrEmpty(tarihFiltresi))
+            {
+                birlesikFiltre += tarihFiltresi;
+            }
+            if (!string.IsNullOrEmpty(kullaniciFiltresi))
+            {
+                if (!string.IsNullOrEmpty(birlesikFiltre))
+                {
+                    birlesikFiltre += " AND ";
+                }
+                birlesikFiltre += "(" + kullaniciFiltresi + ")";
+                
+            }
+         
+
+            gridView.ActiveFilterString = birlesikFiltre;
         }
 
-      
-        private void lookUpEdit1_EditValueChanged(object sender, EventArgs e)
+        private void timerRapor_Tick(object sender, EventArgs e)
         {
-
+            ProcessLogDal processLogDal = new ProcessLogDal();
+            gridControl.DataSource = processLogDal.GetAll();
+            gridView.RefreshData();
         }
-
-
-        //private void gridView_EditFormPrepared(object sender, EditFormPreparedEventArgs e)
-        //{
-        //    foreach (Control item in e.BindableControls)
-        //    {
-        //        DateEdit dateEdit = null;
-        //        dateEdit = item as DateEdit;
-        //        if (dateEdit != null)
-        //        {
-        //            // Focus the DateEdit editor
-        //            gridControl.BeginInvoke(new MethodInvoker(() => { dateEdit.Focus(); }));
-        //            return;
-        //        }
-        //    }
-        //    }
+    }
     }
 
-}
+
+

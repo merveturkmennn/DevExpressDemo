@@ -117,25 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>362, 17</value>
-  </metadata>
-  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
-    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZT0iSWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJJZGVhU29mdElkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVXNlcklkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVXNlcm5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSXAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3JlYXRlZEF0IiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iUmVjb3JkSWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNb2R1bGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmlsZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBY3QiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVXNlclR5cGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVGFibGVOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZ1bmN0aW9uTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJNb2R1bGVOYW1lVmVyYm9zZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJMb2dTZW50ZW5jZSIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
-  </data>
   <metadata name="behaviorManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
-  </metadata>
-  <metadata name="virtualServerModeSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>170, 17</value>
   </metadata>
   <metadata name="layoutConverter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>497, 17</value>
   </metadata>
-  <metadata name="processLogsBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>205, 54</value>
-  </metadata>
-  <metadata name="processLogsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>788, 17</value>
+  <metadata name="timerRapor.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>642, 17</value>
   </metadata>
 </root>

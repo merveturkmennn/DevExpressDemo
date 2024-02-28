@@ -18,7 +18,7 @@ namespace DataGrid01
             {
                 connection.Open();
             }
-            SqlCommand command = new SqlCommand("Select Top 1000 * from ProcessLogs Order By  IdeaSoftId desc", connection);
+            SqlCommand command = new SqlCommand("Select Top 10000 * from ProcessLogs Order By  IdeaSoftId desc", connection);
             SqlDataReader reader = command.ExecuteReader();
             List<ProcessLog> processLogs = new List<ProcessLog>();
             while (reader.Read())
